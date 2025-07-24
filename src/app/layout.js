@@ -4,6 +4,7 @@ import './globals.css';
 import { Raleway } from 'next/font/google';
 import { Instagram, Mail, Menu } from 'lucide-react';
 import { useState } from 'react';
+import { Analytics } from '@vercel/analytics/next';
 
 const raleway = Raleway({
   subsets: ['latin'],
@@ -72,6 +73,7 @@ export default function RootLayout({ children }) {
         {/* Main Content */}
         <main className="flex-1 md:ml-64 min-h-screen p-8 bg-gray-50">
           {children}
+          <Analytics />
         </main>
       </body>
     </html>
