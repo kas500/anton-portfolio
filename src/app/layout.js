@@ -62,7 +62,7 @@ export default function RootLayout({ children }) {
               <Link href="/film" onClick={() => setOpen(false)}>Film</Link>
               <div className="flex gap-4 pt-4">
                 <a href="https://instagram.com/kaspicot" target="_blank"><Instagram className="w-5 h-5" /></a>
-                <a href="https://instagram.com/blindemptinness" target="_blank"><Instagram className="w-5 h-5" /></a>
+                <a href="https://instagram.com/blindemptiness" target="_blank"><Instagram className="w-5 h-5" /></a>
                 <a href="mailto:krasnikovanton84@gmail.com"><Mail className="w-5 h-5" /></a>
               </div>
             </nav>
