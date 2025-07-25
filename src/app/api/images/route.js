@@ -13,6 +13,7 @@ export async function GET(req) {
 
   const folder = `portfolio/${category}`;
   const results = await cloudinary.search
+    .with_field("context") 
     .expression(`folder:${folder}`)
     .sort_by("public_id", "desc")
     .max_results(50)
@@ -21,6 +22,7 @@ export async function GET(req) {
   const images = results.resources.map((file) => ({
     url: file.secure_url,
     alt: file.public_id,
+    feeling: file.context?.feeling || "", 
   }));
 
   return NextResponse.json(images);
