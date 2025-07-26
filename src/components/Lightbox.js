@@ -49,9 +49,9 @@ export default function Lightbox({ images }) {
             </div>
 
             {/* Always show a small label below the thumbnail */}
-            <div className="mt-2 text-xs text-gray-600 font-medium">
+            {/* <div className="mt-2 text-xs text-gray-600 font-medium">
               Feeling
-            </div>
+            </div> */}
           </div>
         ))}
       </div>
@@ -81,7 +81,7 @@ export default function Lightbox({ images }) {
           />
 
           {/* Dynamic feeling text (from Cloudinary metadata) */}
-          {!loading && (
+          {/* {!loading && (
             <div
               className="bg-white text-black mt-4 p-4 shadow-md max-w-[600px] text-center rounded transition-opacity duration-500"
               onClick={(e) => e.stopPropagation()} // prevent close on click
@@ -101,7 +101,7 @@ export default function Lightbox({ images }) {
                 If this resonates, tip me $1.
               </a>
             </div>
-          )}
+          )} */}
         </div>
       )}
     </>
