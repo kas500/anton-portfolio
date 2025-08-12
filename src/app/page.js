@@ -24,7 +24,7 @@ export default function HomePage() {
       const seconds = now.getUTCSeconds();
 
       setTimeAlive(
-        `${years} years, ${months} months, ${days} days, ${hours} hours, ${minutes} minutes, ${seconds} seconds`
+        `${years} : ${months} : ${days} : ${hours} : ${minutes} : ${seconds}`
       );
     };
 
@@ -43,7 +43,7 @@ export default function HomePage() {
           className="object-contain max-h-[80%] max-w-full mb-4"
         />
         <p className="text-gray-700 text-sm leading-snug">
-          It’s me. I have been alive for <br />
+          {/* It’s me. I have been alive for <br /> */}
           <span className="font-semibold">{timeAlive}</span>.
         </p>
       </div>
