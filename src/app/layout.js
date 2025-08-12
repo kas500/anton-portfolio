@@ -84,7 +84,7 @@ export default function RootLayout({ children }) {
         )}
 
         {/* Main Content with Spinner */}
-        <main className="flex-1 md:ml-64 min-h-screen p-8 bg-gray-50 relative">
+        <main className="flex-1 md:ml-64 min-h-screen p-8 bg-black relative">
           {loading ? (
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="w-12 h-12 border-4 border-gray-300 border-t-gray-900 animate-spin rounded-full"></div>
