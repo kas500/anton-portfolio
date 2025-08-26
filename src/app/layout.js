@@ -70,8 +70,8 @@ export default function RootLayout({ children }) {
         {open && (
           <div className="md:hidden fixed top-14 left-0 w-full bg-white shadow-lg p-4 z-50 text-black">
             <nav className="flex flex-col gap-4 text-lg text-black">
-              <Link href="/bw" onClick={() => setOpen(false)}>BW</Link>
               <Link href="/color" onClick={() => setOpen(false)}>Color</Link>
+              <Link href="/bw" onClick={() => setOpen(false)}>BW</Link>
               <Link href="/macro" onClick={() => setOpen(false)}>Macro</Link>
               <Link href="/film" onClick={() => setOpen(false)}>Film</Link>
               <div className="flex gap-4 pt-4">
